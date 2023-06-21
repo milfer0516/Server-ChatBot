@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 	});
 });
 
-app.post("/find-chatBot", async (req, res) => {
+app.post("/", async (req, res) => {
 	try {
 		const { prompt } = req.body;
 		const response = await openai.createCompletion({
